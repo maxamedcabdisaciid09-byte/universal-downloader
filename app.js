@@ -90,26 +90,29 @@ const zipDirectory = async (sourceDir, outPath) => {
 
 const runYtdlp = (args) => {
     return new Promise((resolve, reject) => {
-        console.log(`Executing download command: yt-dlp ${args.join(' ')}`);
-        const ytdlp = spawn('yt-dlp', args);
+
+        const ytdlpProcess = ytdlp.raw(args);
+
         let stderr = '';
-        ytdlp.stderr.on('data', (data) => {
+
+        ytdlpProcess.stderr.on('data', (data) => {
             stderr += data.toString();
         });
-        ytdlp.stdout.on('data', (data) => {
+
+        ytdlpProcess.stdout.on('data', (data) => {
             console.log(data.toString());
         });
-        ytdlp.on('error', (err) => reject(err));
-        ytdlp.on('close', (code) => {
+
+        ytdlpProcess.on('error', (err) => reject(err));
+
+        ytdlpProcess.on('close', (code) => {
             if (code !== 0) {
-                if (stderr.includes('403')) {
-                    return reject(new Error('A temporary error (403 Forbidden) occurred. Please try the download again.'));
-                }
-                reject(new Error(`yt-dlp exited with code ${code}. Stderr: ${stderr.trim()}`));
+                reject(new Error(`yt-dlp exited with code ${code}`));
             } else {
                 resolve();
             }
         });
+
     });
 };
 
