@@ -1,0 +1,127 @@
+{
+  "preferences": {
+    "downloadType": "video",
+    "audioFormat": "mp3",
+    "videoFormat": "auto",
+    "resolution": "1080",
+    "highestFps": "yes",
+    "drmSourcePreference": "auto",
+    "includeSubtitles": false,
+    "enableSponsorblock": false,
+    "sponsorblockMark": "sponsor,intro,outro,selfpromo,filler,interaction,music_offtopic",
+    "sponsorblockRemove": "sponsor,intro,outro,selfpromo,preview,interaction,music_offtopic",
+    "enablePlaylist": false,
+    "uploadToTerabox": false,
+    "enableClipping": false,
+    "clipEditorMode": "visual",
+    "clipUseMilliseconds": false,
+    "clipStartTime": "",
+    "clipEndTime": "",
+    "enablePortraitMode": false,
+    "gifFps": "15",
+    "gifWidth": "480",
+    "advEmbedMetadata": true,
+    "advEmbedChapters": true,
+    "advEmbedThumbnail": true,
+    "advWriteInfoJson": false,
+    "advWriteDescription": false,
+    "advWriteThumbnail": false,
+    "advRemuxVideo": "",
+    "advMergeOutputFormat": "",
+    "advPreferFreeFormats": false,
+    "advRestrictFilenames": false,
+    "advRetries": "10",
+    "advFragmentRetries": "10",
+    "advOutputTemplate": "",
+    "advNoOverwrites": false,
+    "advEmbedSubs": false,
+    "advKeepVideo": false,
+    "advFormatSort": ""
+  },
+  "history": [
+    {
+      "url": "https://www.youtube.com/watch?t=8&v=6j1tT2vxl6g",
+      "timestamp": 1782146781582,
+      "success": true,
+      "teraboxLink": null,
+      "metadata": {
+        "url": "https://www.youtube.com/watch?t=8&v=6j1tT2vxl6g",
+        "title": "Poor Man Wants to Die, But Accidentally Becomes a Millionaire . Movie Recaps",
+        "creator": "Crown Recaps",
+        "thumbnailUrl": "https://i.ytimg.com/vi/6j1tT2vxl6g/hqdefault.jpg",
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/6j1tT2vxl6g/hqdefault.jpg",
+            "width": null,
+            "height": null,
+            "id": "fast-meta"
+          }
+        ],
+        "durationSeconds": null,
+        "youtubeVideoId": null,
+        "viewCount": null,
+        "likeCount": null,
+        "dislikeCount": null,
+        "metadataCacheKey": "playlist:https://www.youtube.com/watch?t=8&v=6j1tT2vxl6g"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?t=8&v=6j1tT2vxl6g",
+      "timestamp": 1782146486355,
+      "success": true,
+      "teraboxLink": null,
+      "metadata": {
+        "url": "https://www.youtube.com/watch?t=8&v=6j1tT2vxl6g",
+        "title": "Poor Man Wants to Die, But Accidentally Becomes a Millionaire . Movie Recaps",
+        "creator": "Crown Recaps",
+        "thumbnailUrl": "https://i.ytimg.com/vi/6j1tT2vxl6g/hqdefault.jpg",
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/6j1tT2vxl6g/hqdefault.jpg",
+            "width": null,
+            "height": null,
+            "id": "fast-meta"
+          }
+        ],
+        "durationSeconds": null,
+        "youtubeVideoId": null,
+        "viewCount": null,
+        "likeCount": null,
+        "dislikeCount": null,
+        "metadataCacheKey": "playlist:https://www.youtube.com/watch?t=8&v=6j1tT2vxl6g"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?t=8&v=6j1tT2vxl6g",
+      "timestamp": 1782146316032,
+      "success": true,
+      "teraboxLink": null,
+      "metadata": {
+        "url": "https://www.youtube.com/watch?t=8&v=6j1tT2vxl6g",
+        "title": "Poor Man Wants to Die, But Accidentally Becomes a Millionaire . Movie Recaps",
+        "creator": "Crown Recaps",
+        "thumbnailUrl": "https://i.ytimg.com/vi/6j1tT2vxl6g/hqdefault.jpg",
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/6j1tT2vxl6g/hqdefault.jpg",
+            "width": null,
+            "height": null,
+            "id": "fast-meta"
+          }
+        ],
+        "durationSeconds": null,
+        "youtubeVideoId": null,
+        "viewCount": null,
+        "likeCount": null,
+        "dislikeCount": null,
+        "metadataCacheKey": "playlist:https://www.youtube.com/watch?t=8&v=6j1tT2vxl6g"
+      }
+    }
+  ],
+  "statistics": {
+    "totalDownloads": 3,
+    "successfulDownloads": 0,
+    "failedDownloads": 0
+  },
+  "version": "1.0"
+}
