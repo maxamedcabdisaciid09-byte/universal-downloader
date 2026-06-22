@@ -89,28 +89,30 @@ const zipDirectory = async (sourceDir, outPath) => {
 };
 
 const runYtdlp = (args) => {
-    return new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
+    const ytdlpProcess = ytdlp.raw(args);
 
-        const ytdlpProcess = ytdlp.raw(args);
+    let stderr = '';
 
-        let stderr = '';
+    ytdlpProcess.stderr.on('data', (data) => {
+      stderr += data.toString();
+    });
 
-        ytdlpProcess.stderr.on('data', (data) => {
-            stderr += data.toString();
-        });
+    ytdlpProcess.stdout.on('data', (data) => {
+      console.log(data.toString());
+    });
 
-        ytdlpProcess.stdout.on('data', (data) => {
-            console.log(data.toString());
-        });
+    ytdlpProcess.on('error', (err) => reject(err));
 
-        ytdlpProcess.on('error', (err) => reject(err));
-
-        ytdlpProcess.on('close', (code) => {
-            if (code !== 0) {
-                reject(new Error(`yt-dlp exited with code ${code}`));
-            } else {
-                resolve();
-            }
+    ytdlpProcess.on('close', (code) => {
+      if (code !== 0) {
+        reject(new Error(`yt-dlp exited with code ${code}`));
+      } else {
+        resolve();
+      }
+    });
+  });
+};
         });
 
     });
