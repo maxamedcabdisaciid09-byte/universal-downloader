@@ -2,7 +2,9 @@
   "name": "universaldownloader",
   "version": "1.0.1",
   "main": "app.js",
-  "dependencies": {
+ "dependencies": {
+  "express": "^4.21.2",
+  "yt-dlp-exec": "^1.0.2",
     "abort-controller": "^3.0.0",
     "accepts": "^1.3.8",
     "ansi-regex": "^6.1.0",
@@ -53,7 +55,7 @@
     "etag": "^1.8.1",
     "event-target-shim": "^5.0.1",
     "events": "^3.3.0",
-    "express": "^4.21.2",
+    
     "fast-fifo": "^1.3.2",
     "finalhandler": "^1.3.1",
     "foreground-child": "^3.3.1",
