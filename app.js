@@ -5,6 +5,7 @@ const path = require('path');
 const os = require('os');
 const fs = require('fs');
 const { spawn } = require('child_process');
+const ytDlp = require('yt-dlp-exec');
 const { v4: uuidv4 } = require('uuid');
 const multer = require('multer');
 const archiver = require('archiver');
